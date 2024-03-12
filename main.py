@@ -7,10 +7,6 @@ grn_mask = re.compile(r'^\d+₴$')
 file_path = "ticket_sales.txt"
 
 
-def check_existence(path: str):
-    return os.path.exists(path)
-
-
 def check_template(lines_list: list[list]):
     for line in lines_list:
         flag = True
