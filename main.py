@@ -50,7 +50,7 @@ def check_for_repeat(lines_list: list[list]):
 def check_data_correctness(path: str):
     columns_list = []
     with open(path, 'r', encoding="utf-8") as mainFile:
-        for i, line in enumerate(mainFile.readlines()):
+        for line in mainFile.readlines():
             row = line.split('\t')
             columns_list.append(row)
         check_template(columns_list)
